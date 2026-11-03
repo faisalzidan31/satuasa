@@ -1,0 +1,1846 @@
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: #0A1F5B;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.navbar {
+  width: 100%;
+  background: #ffffff;
+  border-bottom: 1px solid #D6E3F2;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1280px;
+  margin: auto;
+  min-height: 86px;
+  padding: 0 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+
+/* LOGO */
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 220px;
+}
+
+.brand-logo {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #344DAA;
+  color: #ffffff;
+
+  font-size: 25px;
+  font-weight: 800;
+
+  border-radius: 8px;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.brand-text strong {
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #0A1F5B;
+}
+
+.brand-text small {
+  margin-top: 5px;
+  font-size: 8px;
+  letter-spacing: 1.3px;
+  color: #6F8AA8;
+}
+
+
+/* MENU */
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 34px;
+  flex: 1;
+}
+
+.nav-menu a {
+  position: relative;
+
+  color: #496581;
+  font-size: 14px;
+  font-weight: 600;
+
+  padding: 8px 0;
+
+  transition: 0.25s ease;
+}
+
+.nav-menu a::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 0;
+  height: 2px;
+
+  background: #344DAA;
+
+  transition: 0.25s ease;
+}
+
+.nav-menu a:hover {
+  color: #344DAA;
+}
+
+.nav-menu a:hover::after {
+  width: 100%;
+}
+
+
+/* LOGIN */
+
+.login-button {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+
+  padding: 13px 20px;
+
+  background: #344DAA;
+  color: #ffffff;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  border-radius: 5px;
+
+  transition: 0.25s ease;
+}
+
+.login-button span {
+  font-size: 18px;
+}
+
+.login-button:hover {
+  background: #0A1F5B;
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero-section {
+  width: 100%;
+  background: #EFF8FF;
+  padding: 0 0 60px;
+}
+
+.hero-container {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+
+  padding: 0 35px;
+
+  display: grid;
+  grid-template-columns: 40% 60%;
+  align-items: center;
+
+  gap: 35px;
+}
+
+
+/* HERO TEXT */
+
+.hero-content {
+  max-width: 650px;
+}
+
+.hero-label {
+  display: inline-block;
+
+  margin-bottom: 22px;
+  padding: 8px 14px;
+
+  border-left: 4px solid #344DAA;
+
+  color: #344DAA;
+
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.hero-content h1 {
+  display: flex;
+  flex-direction: column;
+
+  font-size: clamp(48px, 6vw, 82px);
+  line-height: 0.96;
+
+  letter-spacing: -3px;
+  font-weight: 900;
+
+  color: #344DAA;
+}
+
+.hero-content h1 span {
+  display: block;
+}
+
+.hero-content h1 .dark-text {
+  color: #0A1F5B;
+}
+
+.hero-description {
+  max-width: 570px;
+
+  margin-top: 30px;
+
+  color: #496581;
+
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+
+/* HERO BUTTON */
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  margin-top: 35px;
+}
+
+.button-primary,
+.button-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+
+  min-height: 50px;
+  padding: 0 23px;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  border-radius: 5px;
+
+  transition: 0.25s ease;
+}
+
+.button-primary {
+  background: #344DAA;
+  color: #ffffff;
+  border: 1px solid #344DAA;
+}
+
+.button-primary:hover {
+  background: #0A1F5B;
+  border-color: #0A1F5B;
+  transform: translateY(-2px);
+}
+
+.button-primary span {
+  font-size: 20px;
+}
+
+.button-outline {
+  background: #ffffff;
+  color: #344DAA;
+  border: 1px solid #344DAA;
+}
+
+.button-outline:hover {
+  background: #344DAA;
+  color: #ffffff;
+}
+
+.button-outline span {
+  font-size: 22px;
+}
+
+
+/* HERO IMAGE */
+
+.hero-image-wrapper {
+  width: 100%;
+  height: 500px;
+
+  overflow: hidden;
+
+  border-radius: 22px;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center;
+
+  transition: 0.5s ease;
+}
+
+.hero-image-wrapper:hover .hero-image {
+  transform: scale(1.04);
+}
+
+
+/* =========================================================
+   STATISTIK
+========================================================= */
+
+.stats-section {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 0;
+
+  padding: 0;
+  margin: 0;
+}
+
+.stat-box {
+  width: 100%;
+
+  min-height: 155px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 25px;
+
+  padding: 25px 30px;
+
+  background: #ffffff;
+
+  border: 1px solid #D6E3F2;
+
+  border-radius: 0;
+
+  box-shadow: none;
+}
+
+.stat-icon {
+  width: 50px;
+  height: 50px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #EFF8FF;
+  color: #344DAA;
+
+  border-radius: 8px;
+
+  font-size: 25px;
+}
+
+.stat-box div:last-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-box strong {
+  color: #0A1F5B;
+
+  font-size: 30px;
+  line-height: 1;
+}
+
+.stat-box span {
+  margin-top: 8px;
+
+  color: #6F8AA8;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.5px;
+}
+
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.about-home-section {
+  padding: 80px 0 90px;
+
+  background: #ffffff;
+}
+
+.about-home-container {
+  width: 100%;
+  max-width: 1500px;
+
+  margin: auto;
+
+  padding: 0 35px;
+
+  display: grid;
+
+  grid-template-columns: 40% 60%;
+
+  align-items: center;
+
+  gap: 35px;
+}
+
+.section-label {
+  display: inline-block;
+
+  margin-bottom: 20px;
+
+  color: #344DAA;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+.about-home-text h2 {
+  color: #0A1F5B;
+
+  font-size: clamp(50px, 5vw, 72px);
+
+  line-height: 0.95;
+
+  font-weight: 900;
+
+  letter-spacing: -2px;
+}
+
+.about-home-text h2 span {
+  color: #344DAA;
+}
+
+.about-home-text p {
+  max-width: 500px;
+
+  margin: 28px 0;
+
+  color: #496581;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+.about-home-image {
+  width: 100%;
+
+  height: 500px;
+
+  overflow: hidden;
+
+  border-radius: 20px;
+
+  background: #D0E4FF;
+}
+
+.about-home-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: 0.5s ease;
+}
+
+.about-home-image:hover img {
+  transform: scale(1.04);
+}
+
+
+
+/* =========================================================
+   KEGIATAN - LEBIH BESAR
+========================================================= */
+
+.activities-section {
+  width: 100%;
+  min-height: 440px;
+  padding: 70px 0;
+
+  background: #A9C7E2;
+}
+
+.activities-container {
+  width: 100%;
+  max-width: 1700px;
+
+  margin: 0 auto;
+  padding: 0 45px;
+
+  display: grid;
+  grid-template-columns: 280px 1fr;
+
+  align-items: center;
+  gap: 45px;
+}
+
+
+/* =========================================================
+   JUDUL
+========================================================= */
+
+.activities-intro {
+  position: static;
+  align-self: center;
+}
+
+.activities-intro .section-label {
+  display: block;
+
+  margin-bottom: 12px;
+
+  color: #0A1F5B;
+
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.activities-intro h2 {
+  margin: 0;
+
+  color: #005C99;
+
+  font-size: 40px;
+  line-height: 0.95;
+
+  font-weight: 900;
+  letter-spacing: -1.5px;
+}
+
+.activities-intro p {
+  max-width: 245px;
+
+  margin: 18px 0;
+
+  color: #0A1F5B;
+
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.activities-intro .small-blue-button {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+
+  padding: 12px 19px;
+
+  background: #005C99;
+  color: #ffffff;
+
+  border-radius: 20px;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  transition: 0.25s ease;
+}
+
+.activities-intro .small-blue-button:hover {
+  background: #0A1F5B;
+  transform: translateY(-2px);
+}
+
+.activities-intro .small-blue-button span {
+  font-size: 18px;
+}
+
+
+/* =========================================================
+   4 KARTU SATU BARIS
+========================================================= */
+
+.activity-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  gap: 16px;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.activity-card {
+  width: 100%;
+
+  overflow: hidden;
+
+  background: #005C99;
+
+  border: 1px solid #D6E3F2;
+
+  border-radius: 8px;
+
+  transition: 0.25s ease;
+}
+
+.activity-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 15px 30px rgba(10, 31, 91, 0.2);
+}
+
+
+/* =========================================================
+   FOTO
+========================================================= */
+
+.activity-image {
+  position: relative;
+
+  width: 100%;
+
+  height: 205px;
+
+  overflow: hidden;
+
+  background: #D0E4FF;
+}
+
+.activity-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: 0.35s ease;
+}
+
+.activity-card:hover .activity-image img {
+  transform: scale(1.05);
+}
+
+
+/* =========================================================
+   TANGGAL
+========================================================= */
+
+.activity-date {
+  position: absolute;
+
+  left: 12px;
+  top: 12px;
+
+  width: 50px;
+  height: 58px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+
+  color: #005C99;
+
+  border-radius: 5px;
+}
+
+.activity-date strong {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.activity-date span {
+  margin-top: 4px;
+
+  font-size: 10px;
+
+  line-height: 1;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   ISI CARD
+========================================================= */
+
+.activity-content {
+  min-height: 145px;
+
+  padding: 16px 17px;
+
+  background: #005C99;
+}
+
+.activity-content h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 15px;
+
+  line-height: 1.25;
+
+  font-weight: 800;
+}
+
+.activity-content p {
+  margin: 9px 0 0;
+
+  color: #ffffff;
+
+  font-size: 11px;
+
+  line-height: 1.5;
+}
+
+.activity-content small {
+  display: block;
+
+  margin-top: 17px;
+
+  color: #D6E6F7;
+
+  font-size: 9px;
+
+  line-height: 1.3;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  .activities-container {
+    grid-template-columns: 220px 1fr;
+
+    gap: 30px;
+
+    padding: 0 30px;
+  }
+
+  .activities-intro h2 {
+    font-size: 32px;
+  }
+
+  .activity-grid {
+    gap: 10px;
+  }
+
+  .activity-image {
+    height: 160px;
+  }
+
+  .activity-content {
+    min-height: 125px;
+    padding: 12px;
+  }
+
+  .activity-content h3 {
+    font-size: 12px;
+  }
+
+  .activity-content p {
+    font-size: 9px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 800px) {
+
+  .activities-section {
+    min-height: auto;
+
+    padding: 50px 0;
+  }
+
+  .activities-container {
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+
+    padding: 0 25px;
+  }
+
+  .activities-intro p {
+    max-width: 400px;
+  }
+
+  .activity-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 15px;
+  }
+
+  .activity-image {
+    height: 170px;
+  }
+}
+
+
+@media (max-width: 500px) {
+
+  .activity-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .activity-image {
+    height: 210px;
+  }
+
+  .activities-intro h2 {
+    font-size: 34px;
+  }
+}
+
+/* =========================================================
+   MEMBERS - BESAR / SATU LAYAR
+========================================================= */
+
+.members-section {
+  width: 100%;
+  min-height: 430px;
+
+  padding: 65px 0;
+
+  background: #EFF8FF;
+}
+
+.members-container {
+  width: 100%;
+  max-width: 1700px;
+
+  margin: 0 auto;
+  padding: 0 45px;
+
+  display: grid;
+
+  grid-template-columns: 250px 1fr 280px;
+
+  align-items: center;
+
+  gap: 40px;
+}
+
+
+/* =========================================================
+   JUDUL ANGGOTA
+========================================================= */
+
+.members-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  align-self: center;
+}
+
+.members-title .section-label {
+  margin-bottom: 12px;
+
+  color: #0A1F5B;
+
+  font-size: 14px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+.members-title h2 {
+  margin: 0 0 20px;
+
+  color: #005C99;
+
+  font-size: 38px;
+
+  line-height: 0.98;
+
+  font-weight: 900;
+
+  letter-spacing: -1.2px;
+}
+
+
+/* BUTTON */
+
+.members-title .small-blue-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  padding: 11px 17px;
+
+  background: #005C99;
+
+  color: #ffffff;
+
+  border-radius: 20px;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  transition: 0.25s ease;
+}
+
+.members-title .small-blue-button:hover {
+  background: #0A1F5B;
+
+  transform: translateY(-2px);
+}
+
+.members-title .small-blue-button span {
+  font-size: 16px;
+}
+
+
+/* =========================================================
+   6 ANGGOTA SATU BARIS
+========================================================= */
+
+.members-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+
+  gap: 13px;
+
+  margin-top: 0;
+}
+
+
+/* =========================================================
+   MEMBER CARD
+========================================================= */
+
+.member-card {
+  position: relative;
+
+  width: 100%;
+
+  min-height: 260px;
+
+  overflow: hidden;
+
+  background: #D0E4FF;
+
+  border: 1px solid #8BA9FF;
+
+  border-radius: 7px;
+
+  transition: 0.25s ease;
+}
+
+.member-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 12px 25px rgba(10, 31, 91, 0.15);
+}
+
+
+/* =========================================================
+   FOTO ANGGOTA
+========================================================= */
+
+.member-card img {
+  width: 100%;
+
+  height: 260px;
+
+  object-fit: cover;
+
+  transition: 0.4s ease;
+}
+
+.member-card:hover img {
+  transform: scale(1.05);
+}
+
+
+/* =========================================================
+   INFORMASI ANGGOTA
+========================================================= */
+
+.member-info {
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  padding: 45px 12px 12px;
+
+  background: linear-gradient(
+    transparent,
+    rgba(10, 31, 91, 0.97)
+  );
+
+  color: #ffffff;
+
+  display: flex;
+
+  flex-direction: column;
+}
+
+.member-info strong {
+  color: #ffffff;
+
+  font-size: 11px;
+
+  line-height: 1.25;
+
+  font-weight: 800;
+}
+
+.member-info span {
+  margin-top: 4px;
+
+  color: #D0E4FF;
+
+  font-size: 8px;
+
+  line-height: 1.2;
+}
+
+
+/* =========================================================
+   QUOTE
+========================================================= */
+
+.members-quote {
+  width: 100%;
+
+  margin: 0;
+
+  padding: 0;
+
+  background: transparent;
+
+  border-left: none;
+
+  color: #0A1F5B;
+
+  font-size: 21px;
+
+  font-style: normal;
+
+  font-weight: 800;
+
+  line-height: 1.2;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1200px) {
+
+  .members-container {
+    grid-template-columns: 210px 1fr;
+
+    gap: 30px;
+
+    padding: 0 30px;
+  }
+
+  .members-quote {
+    display: none;
+  }
+
+  .members-title h2 {
+    font-size: 32px;
+  }
+
+  .members-grid {
+    gap: 9px;
+  }
+
+  .member-card {
+    min-height: 230px;
+  }
+
+  .member-card img {
+    height: 230px;
+  }
+}
+
+
+/* =========================================================
+   TABLET KECIL
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .members-section {
+    min-height: auto;
+
+    padding: 55px 0;
+  }
+
+  .members-container {
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+
+    padding: 0 30px;
+  }
+
+  .members-title {
+    align-items: flex-start;
+  }
+
+  .members-grid {
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+  }
+
+  .member-card {
+    min-height: 260px;
+  }
+
+  .member-card img {
+    height: 260px;
+  }
+
+  .members-quote {
+    display: block;
+
+    max-width: 600px;
+
+    margin: 10px auto 0;
+
+    font-size: 19px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .members-section {
+    padding: 50px 0;
+  }
+
+  .members-container {
+    padding: 0 20px;
+  }
+
+  .members-title h2 {
+    font-size: 34px;
+  }
+
+  .members-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 13px;
+  }
+
+  .member-card {
+    min-height: 260px;
+  }
+
+  .member-card img {
+    height: 260px;
+  }
+
+  .members-quote {
+    font-size: 17px;
+  }
+}
+
+
+@media (max-width: 400px) {
+
+  .members-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .member-card {
+    min-height: 350px;
+  }
+
+  .member-card img {
+    height: 350px;
+  }
+}
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.cta-section {
+  min-height: 280px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 60px 30px;
+
+  background: #344DAA;
+
+  text-align: center;
+}
+
+.cta-text {
+  color: #ffffff;
+
+  font-size: clamp(28px, 4vw, 55px);
+
+  line-height: 1;
+
+  font-weight: 900;
+
+  letter-spacing: -1px;
+
+  transition: 0.3s ease;
+}
+
+.cta-text:hover {
+  color: #D0E4FF;
+
+  transform: scale(1.02);
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer {
+  background: #0A1F5B;
+
+  color: #ffffff;
+}
+
+.footer-container {
+  max-width: 1180px;
+
+  margin: auto;
+
+  padding: 55px 30px 30px;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  align-items: center;
+
+  gap: 30px;
+}
+
+
+/* FOOTER BRAND */
+
+.footer-brand {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+.footer-logo {
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #344DAA;
+
+  border-radius: 7px;
+
+  font-size: 22px;
+
+  font-weight: 900;
+}
+
+.footer-brand > div:last-child {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.footer-brand strong {
+  font-size: 19px;
+
+  letter-spacing: 2px;
+}
+
+.footer-brand small {
+  margin-top: 4px;
+
+  color: #D0E4FF;
+
+  font-size: 8px;
+
+  letter-spacing: 1px;
+}
+
+
+/* FOOTER MENU */
+
+.footer-menu {
+  display: flex;
+
+  justify-content: flex-end;
+
+  gap: 25px;
+}
+
+.footer-menu a {
+  color: #D1E2ED;
+
+  font-size: 13px;
+
+  transition: 0.25s ease;
+}
+
+.footer-menu a:hover {
+  color: #ffffff;
+}
+
+.footer-container > p {
+  grid-column: 1 / -1;
+
+  padding-top: 25px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+
+  color: #6F8AA8;
+
+  font-size: 12px;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   RESPONSIVE TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  .nav-container {
+    padding: 0 25px;
+  }
+
+  .nav-menu {
+    gap: 18px;
+  }
+
+  .nav-menu a {
+    font-size: 13px;
+  }
+
+
+  /* HERO */
+
+  .hero-container {
+    grid-template-columns: 45% 55%;
+
+    gap: 25px;
+
+    padding: 30px 25px;
+  }
+
+  .hero-image-wrapper {
+    height: 430px;
+  }
+
+
+  /* ABOUT */
+
+  .about-home-container {
+    grid-template-columns: 45% 55%;
+
+    gap: 25px;
+
+    padding: 0 25px;
+  }
+
+  .about-home-image {
+    height: 430px;
+  }
+
+
+  /* KEGIATAN */
+
+  .activities-container {
+    grid-template-columns: 25% 75%;
+
+    gap: 20px;
+
+    padding: 0 25px;
+  }
+
+  .activity-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  /* MEMBERS */
+
+  .members-container {
+    grid-template-columns: 25% 75%;
+
+    padding: 0 25px;
+  }
+
+  .members-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .members-quote {
+    grid-column: 1 / -1;
+
+    margin-top: 25px;
+  }
+
+
+  /* STATS */
+
+  .stats-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* =========================================================
+   RESPONSIVE MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  /* NAVBAR */
+
+  .navbar {
+    position: relative;
+  }
+
+  .nav-container {
+    min-height: auto;
+
+    padding: 18px 20px;
+
+    flex-wrap: wrap;
+  }
+
+  .brand {
+    min-width: auto;
+  }
+
+  .brand-logo {
+    width: 42px;
+    height: 42px;
+
+    font-size: 21px;
+  }
+
+  .brand-text strong {
+    font-size: 17px;
+  }
+
+  .brand-text small {
+    font-size: 6px;
+  }
+
+  .nav-menu {
+    order: 3;
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 5px;
+
+    padding-top: 15px;
+
+    border-top: 1px solid #D6E3F2;
+  }
+
+  .nav-menu a {
+    font-size: 11px;
+
+    text-align: center;
+  }
+
+  .login-button {
+    padding: 10px 13px;
+
+    font-size: 11px;
+  }
+
+  .login-button span {
+    font-size: 15px;
+  }
+
+
+  /* HERO */
+
+  .hero-section {
+    padding: 30px 0 50px;
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr;
+
+    padding: 0 20px;
+
+    gap: 35px;
+  }
+
+  .hero-content h1 {
+    font-size: 48px;
+
+    letter-spacing: -2px;
+  }
+
+  .hero-description {
+    font-size: 15px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+
+    align-items: stretch;
+  }
+
+  .button-primary,
+  .button-outline {
+    width: 100%;
+  }
+
+  .hero-image-wrapper {
+    height: 350px;
+  }
+
+
+  /* STATS */
+
+  .stats-section {
+    margin: 0;
+
+    padding: 20px;
+
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stat-box {
+    min-height: 105px;
+
+    padding: 17px;
+
+    gap: 12px;
+  }
+
+  .stat-icon {
+    width: 42px;
+    height: 42px;
+
+    font-size: 20px;
+  }
+
+  .stat-box strong {
+    font-size: 25px;
+  }
+
+  .stat-box span {
+    font-size: 9px;
+  }
+
+
+  /* ABOUT */
+
+  .about-home-section {
+    padding: 70px 0;
+  }
+
+  .about-home-container {
+    padding: 0 20px;
+
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+  }
+
+  .about-home-text h2 {
+    font-size: 48px;
+  }
+
+  .about-home-image {
+    height: 330px;
+  }
+
+
+  /* ACTIVITIES */
+
+  .activities-section {
+    padding: 70px 0;
+  }
+
+  .activities-container {
+    padding: 0 20px;
+
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+  }
+
+  .activities-intro h2 {
+    font-size: 43px;
+  }
+
+  .activity-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .activity-image {
+    height: 250px;
+  }
+
+
+  /* MEMBERS */
+
+  .members-section {
+    padding: 70px 0;
+  }
+
+  .members-container {
+    padding: 0 20px;
+
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+  }
+
+  .members-title h2 {
+    font-size: 45px;
+  }
+
+  .members-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 15px;
+  }
+
+  .member-card {
+    min-height: 280px;
+  }
+
+  .member-card img {
+    height: 280px;
+  }
+
+  .member-info strong {
+    font-size: 13px;
+  }
+
+  .member-info span {
+    font-size: 9px;
+  }
+
+  .members-quote {
+    grid-column: auto;
+
+    margin: 0;
+
+    padding: 25px;
+
+    font-size: 16px;
+  }
+
+
+  /* CTA */
+
+  .cta-section {
+    min-height: 230px;
+  }
+
+  .cta-text {
+    font-size: 30px;
+  }
+
+
+  /* FOOTER */
+
+  .footer-container {
+    padding: 45px 20px 25px;
+
+    grid-template-columns: 1fr;
+
+    text-align: center;
+  }
+
+  .footer-brand {
+    justify-content: center;
+  }
+
+  .footer-menu {
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+  }
+
+  .footer-container > p {
+    grid-column: auto;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 430px) {
+
+  .nav-menu {
+    grid-template-columns: repeat(3, 1fr);
+
+    row-gap: 12px;
+  }
+
+  .hero-content h1 {
+    font-size: 40px;
+  }
+
+  .stats-section {
+    grid-template-columns: 1fr;
+  }
+
+  .about-home-text h2 {
+    font-size: 40px;
+  }
+
+  .activities-intro h2 {
+    font-size: 38px;
+  }
+
+  .members-title h2 {
+    font-size: 38px;
+  }
+
+  .members-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-text {
+    font-size: 25px;
+  }
+}

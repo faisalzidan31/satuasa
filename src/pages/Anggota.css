@@ -1,0 +1,564 @@
+/* =========================================================
+   ANGGOTA PAGE
+========================================================= */
+
+.anggota-page {
+  width: 100%;
+  background: #ffffff;
+  color: #0A1F5B;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.anggota-hero {
+  width: 100%;
+  background: #EFF8FF;
+}
+
+
+/* BREADCRUMB */
+
+.anggota-breadcrumb {
+  max-width: 1280px;
+  height: 48px;
+
+  margin: auto;
+  padding: 0 40px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 14px;
+  color: #0A1F5B;
+}
+
+.anggota-breadcrumb b {
+  color: #496581;
+  font-weight: 400;
+}
+
+
+/* HERO CONTAINER */
+
+.anggota-hero-container {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 52.5% 47.5%;
+
+  min-height: 290px;
+}
+
+
+/* HERO TEXT */
+
+.anggota-hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 50px 60px;
+
+  background: #EFF8FF;
+}
+
+.anggota-hero-content h1 {
+  margin: 0;
+
+  color: #0A1F5B;
+
+  font-size: clamp(40px, 4vw, 60px);
+  line-height: 1.08;
+
+  font-weight: 900;
+
+  letter-spacing: -2px;
+}
+
+.anggota-hero-content h1 span {
+  color: #005C99;
+}
+
+.anggota-hero-content p {
+  max-width: 470px;
+
+  margin-top: 12px;
+
+  color: #0A1F5B;
+
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
+/* HERO IMAGE */
+
+.anggota-hero-image {
+  width: 100%;
+  height: 290px;
+
+  overflow: hidden;
+}
+
+.anggota-hero-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+
+/* =========================================================
+   SEARCH
+========================================================= */
+
+.anggota-search-section {
+  width: 100%;
+  background: #ffffff;
+
+  padding: 24px 30px;
+}
+
+.anggota-search-container {
+  max-width: 870px;
+
+  margin: auto;
+
+  display: flex;
+  gap: 8px;
+}
+
+
+/* SEARCH INPUT */
+
+.anggota-search-box {
+  flex: 1;
+
+  height: 56px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 16px;
+
+  background: #ffffff;
+
+  border: 1px solid #D6E3F2;
+  border-radius: 7px;
+}
+
+.search-icon {
+  margin-right: 15px;
+
+  color: #0A1F5B;
+
+  font-size: 28px;
+  line-height: 1;
+}
+
+.anggota-search-box input {
+  width: 100%;
+
+  border: none;
+  outline: none;
+
+  color: #0A1F5B;
+
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.anggota-search-box input::placeholder {
+  color: #496581;
+}
+
+
+/* BUTTON */
+
+.anggota-search-button {
+  height: 56px;
+
+  padding: 0 22px;
+
+  display: flex;
+  align-items: center;
+  gap: 22px;
+
+  background: #005C99;
+  color: #ffffff;
+
+  border: none;
+  border-radius: 7px;
+
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition: 0.25s ease;
+}
+
+.anggota-search-button:hover {
+  background: #0A1F5B;
+}
+
+.anggota-search-button span {
+  font-size: 20px;
+}
+
+
+/* =========================================================
+   MEMBER LIST
+========================================================= */
+
+.anggota-list-section {
+  width: 100%;
+
+  background: #EFF8FF;
+
+  padding: 18px 30px 42px;
+}
+
+.anggota-list-container {
+  max-width: 1230px;
+
+  margin: auto;
+}
+
+
+/* GRID */
+
+.anggota-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 18px;
+}
+
+
+/* =========================================================
+   MEMBER CARD
+========================================================= */
+
+.anggota-card {
+  min-width: 0;
+  height: 176px;
+
+  display: flex;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border-radius: 7px;
+
+  box-shadow: 0 1px 3px rgba(10, 31, 91, 0.04);
+
+  transition: 0.25s ease;
+}
+
+.anggota-card:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 8px 20px rgba(10, 31, 91, 0.1);
+}
+
+
+/* FOTO CARD */
+
+.anggota-card-image {
+  width: 128px;
+  height: 100%;
+
+  flex-shrink: 0;
+
+  overflow: hidden;
+
+  background: #D0E4FF;
+}
+
+.anggota-card-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+
+/* CARD CONTENT */
+
+.anggota-card-content {
+  flex: 1;
+
+  min-width: 0;
+
+  padding: 10px 10px 9px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* NAME */
+
+.anggota-card-content h3 {
+  margin: 0;
+
+  overflow: hidden;
+
+  color: #0A1F5B;
+
+  font-size: 13px;
+  line-height: 1.3;
+
+  font-weight: 800;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+/* ROLE */
+
+.anggota-role {
+  margin: 3px 0 7px;
+
+  color: #005C99;
+
+  font-size: 11px;
+  line-height: 1.2;
+}
+
+
+/* DETAIL */
+
+.anggota-detail {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+
+  margin-bottom: 5px;
+}
+
+.anggota-detail span {
+  width: 16px;
+
+  color: #005C99;
+
+  font-size: 17px;
+  line-height: 1;
+}
+
+.anggota-detail p {
+  margin: 0;
+
+  overflow: hidden;
+
+  color: #0A1F5B;
+
+  font-size: 9px;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+/* STATUS */
+
+.anggota-status {
+  width: fit-content;
+
+  display: flex;
+  align-items: center;
+
+  gap: 4px;
+
+  margin-top: 1px;
+  padding: 2px 7px;
+
+  border-radius: 4px;
+
+  font-size: 8px;
+  line-height: 1;
+}
+
+.anggota-status.aktif {
+  background: #3D8B68;
+  color: #ffffff;
+}
+
+.anggota-status.nonaktif {
+  background: #656A70;
+  color: #ffffff;
+}
+
+.anggota-status span {
+  font-size: 7px;
+}
+
+
+/* PROFILE BUTTON */
+
+.anggota-profile-button {
+  width: 100%;
+  height: 25px;
+
+  margin-top: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  background: #ffffff;
+
+  border: 1px solid #005C99;
+  border-radius: 15px;
+
+  color: #0A1F5B;
+
+  font-family: inherit;
+  font-size: 8px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.anggota-profile-button:hover {
+  background: #005C99;
+  color: #ffffff;
+}
+
+.anggota-profile-button span {
+  font-size: 15px;
+  line-height: 1;
+}
+
+
+/* =========================================================
+   BOTTOM IMAGE
+========================================================= */
+
+.anggota-bottom-image {
+  width: 100%;
+  height: 68px;
+
+  overflow: hidden;
+
+  background: #D0E4FF;
+}
+
+.anggota-bottom-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  opacity: 0.55;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  .anggota-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .anggota-card {
+    height: 190px;
+  }
+
+  .anggota-card-image {
+    width: 145px;
+  }
+}
+
+
+@media (max-width: 800px) {
+
+  .anggota-hero-container {
+    grid-template-columns: 1fr;
+  }
+
+  .anggota-hero-content {
+    padding: 55px 30px;
+  }
+
+  .anggota-hero-image {
+    height: 300px;
+  }
+
+  .anggota-breadcrumb {
+    padding: 0 25px;
+  }
+
+  .anggota-search-container {
+    max-width: 100%;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .anggota-breadcrumb {
+    height: 45px;
+    padding: 0 20px;
+
+    font-size: 12px;
+  }
+
+  .anggota-hero-content {
+    padding: 50px 20px;
+  }
+
+  .anggota-hero-content h1 {
+    font-size: 38px;
+  }
+
+  .anggota-hero-image {
+    height: 240px;
+  }
+
+
+  .anggota-search-section {
+    padding: 18px 20px;
+  }
+
+  .anggota-search-container {
+    flex-direction: column;
+  }
+
+  .anggota-search-button {
+    justify-content: center;
+  }
+
+
+  .anggota-list-section {
+    padding: 20px;
+  }
+
+  .anggota-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .anggota-card {
+    height: 190px;
+  }
+
+  .anggota-card-image {
+    width: 145px;
+  }
+}

@@ -1,0 +1,967 @@
+/* =========================================================
+   KONTAK PAGE
+========================================================= */
+
+.kontak-page {
+  width: 100%;
+  background: #EFF8FF;
+  color: #0A1F5B;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.kontak-hero {
+  width: 100%;
+  min-height: 245px;
+
+  display: grid;
+  grid-template-columns: 43% 57%;
+
+  background: #EFF8FF;
+}
+
+
+/* LEFT HERO */
+
+.kontak-hero-left {
+  padding: 25px 35px 30px 60px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.kontak-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-bottom: 10px;
+
+  color: #0A1F5B;
+
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.kontak-breadcrumb b {
+  font-weight: 400;
+}
+
+.kontak-hero-text {
+  margin-top: 0;
+}
+
+.kontak-hero-text h1 {
+  margin: 0;
+
+  color: #0A1F5B;
+
+  font-size: clamp(52px, 5vw, 68px);
+
+  line-height: 0.95;
+
+  letter-spacing: -2px;
+
+  font-weight: 900;
+}
+
+.kontak-hero-text h2 {
+  margin: 8px 0 0;
+
+  color: #00659D;
+
+  font-size: clamp(34px, 3.2vw, 46px);
+
+  line-height: 1;
+
+  letter-spacing: -1px;
+
+  font-weight: 900;
+}
+
+.kontak-hero-text p {
+  margin-top: 12px;
+
+  color: #163B76;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+}
+
+
+/* HERO IMAGE */
+
+.kontak-hero-image {
+  width: 100%;
+  height: 245px;
+
+  overflow: hidden;
+}
+
+.kontak-hero-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  transition: transform 0.5s ease;
+}
+
+.kontak-hero-image:hover img {
+  transform: scale(1.04);
+}
+
+
+/* =========================================================
+   MAIN CONTACT
+========================================================= */
+
+.kontak-main {
+  width: 100%;
+
+  padding: 20px 0 15px;
+
+  background: #EFF8FF;
+}
+
+.kontak-main-container {
+  width: 100%;
+  max-width: 1310px;
+
+  margin: 0 auto;
+
+  padding: 0 20px;
+
+  display: grid;
+
+  grid-template-columns: 1.25fr 1fr;
+
+  gap: 28px;
+
+  align-items: start;
+}
+
+
+/* =========================================================
+   INFORMASI KONTAK
+========================================================= */
+
+.informasi-kontak {
+  width: 100%;
+}
+
+.kontak-section-heading h2 {
+  margin: 0;
+
+  color: #0A1F5B;
+
+  font-size: 35px;
+
+  line-height: 1;
+
+  letter-spacing: -1px;
+
+  font-weight: 900;
+}
+
+.kontak-section-heading h2 span {
+  color: #00659D;
+}
+
+.kontak-section-heading p {
+  margin-top: 5px;
+
+  color: #163B76;
+
+  font-size: 11px;
+
+  line-height: 1.5;
+}
+
+
+/* CONTACT CARDS */
+
+.kontak-card-grid {
+  margin-top: 13px;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 12px;
+}
+
+.kontak-info-card {
+  position: relative;
+
+  min-height: 122px;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 10px;
+
+  padding: 13px;
+
+  background: #ffffff;
+
+  border: 1px solid #C8DDF2;
+
+  border-radius: 10px;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.kontak-info-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 10px 25px rgba(10, 31, 91, 0.10);
+}
+
+
+/* ICON */
+
+.kontak-info-icon {
+  width: 39px;
+  height: 39px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #00659D;
+
+  color: #ffffff;
+
+  border-radius: 8px;
+
+  font-size: 21px;
+
+  font-weight: 400;
+}
+
+
+/* CARD CONTENT */
+
+.kontak-info-content {
+  padding-right: 10px;
+}
+
+.kontak-info-content h3 {
+  margin: 2px 0 7px;
+
+  color: #0A1F5B;
+
+  font-size: 12px;
+
+  line-height: 1.2;
+
+  font-weight: 800;
+}
+
+.kontak-info-content p {
+  margin: 0;
+
+  color: #163B76;
+
+  font-size: 9px;
+
+  line-height: 1.5;
+}
+
+
+/* ARROW */
+
+.kontak-card-arrow {
+  position: absolute;
+
+  right: 11px;
+  top: 20px;
+
+  color: #0A1F5B;
+
+  font-size: 20px;
+
+  line-height: 1;
+}
+
+
+/* =========================================================
+   FORM KIRIM PESAN
+========================================================= */
+
+.kirim-pesan-card {
+  width: 100%;
+
+  min-height: 307px;
+
+  padding: 15px 17px 18px;
+
+  background: #ffffff;
+
+  border: 1px solid #C8DDF2;
+
+  border-radius: 11px;
+}
+
+.kirim-pesan-heading h2 {
+  margin: 0;
+
+  color: #0A1F5B;
+
+  font-size: 35px;
+
+  line-height: 1;
+
+  letter-spacing: -1px;
+
+  font-weight: 900;
+}
+
+.kirim-pesan-heading h2 span {
+  color: #00659D;
+}
+
+.kirim-pesan-heading p {
+  margin-top: 4px;
+
+  color: #163B76;
+
+  font-size: 10px;
+
+  line-height: 1.4;
+}
+
+
+/* FORM */
+
+.kontak-form {
+  width: 100%;
+
+  margin-top: 12px;
+}
+
+.form-row {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 9px;
+}
+
+.form-group {
+  position: relative;
+
+  width: 100%;
+
+  height: 35px;
+
+  display: flex;
+
+  align-items: center;
+
+  background: #F2F5FA;
+
+  border: 1px solid #C8DDF2;
+
+  border-radius: 5px;
+
+  overflow: hidden;
+}
+
+.form-group.full {
+  margin-top: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+
+  height: 100%;
+
+  padding: 0 10px 0 38px;
+
+  border: none;
+
+  outline: none;
+
+  background: transparent;
+
+  color: #0A1F5B;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 10px;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #173A72;
+  opacity: 1;
+}
+
+
+/* FORM ICON */
+
+.form-icon {
+  position: absolute;
+
+  left: 12px;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  z-index: 2;
+
+  color: #0A1F5B;
+
+  font-size: 16px;
+
+  pointer-events: none;
+}
+
+
+/* TEXTAREA */
+
+.textarea-group {
+  height: 78px;
+
+  margin-top: 8px;
+
+  align-items: flex-start;
+}
+
+.form-group textarea {
+  resize: none;
+
+  padding-top: 11px;
+
+  padding-right: 10px;
+}
+
+.textarea-icon {
+  top: 13px;
+
+  transform: none;
+}
+
+
+/* SEND BUTTON */
+
+.kirim-button {
+  width: 100%;
+
+  height: 38px;
+
+  margin-top: 12px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  border: none;
+
+  border-radius: 20px;
+
+  background: #00659D;
+
+  color: #ffffff;
+
+  cursor: pointer;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.kirim-button:hover {
+  background: #0A1F5B;
+
+  transform: translateY(-2px);
+}
+
+.send-icon {
+  font-size: 16px;
+}
+
+.send-arrow {
+  font-size: 17px;
+
+  margin-left: 3px;
+}
+
+
+/* =========================================================
+   LOKASI
+========================================================= */
+
+.lokasi-section {
+  width: 100%;
+
+  padding: 8px 0 13px;
+
+  background: #EFF8FF;
+}
+
+.lokasi-container {
+  width: 100%;
+  max-width: 1310px;
+
+  margin: 0 auto;
+
+  padding: 0 20px;
+
+  display: grid;
+
+  grid-template-columns: 1.25fr 1fr;
+
+  gap: 28px;
+
+  align-items: center;
+}
+
+
+/* LOKASI TEXT */
+
+.lokasi-heading h2 {
+  margin: 0;
+
+  color: #0A1F5B;
+
+  font-size: 33px;
+
+  line-height: 0.95;
+
+  letter-spacing: -1px;
+
+  font-weight: 900;
+}
+
+.lokasi-heading h2 span {
+  color: #00659D;
+}
+
+.lokasi-heading p {
+  max-width: 320px;
+
+  margin-top: 12px;
+
+  color: #163B76;
+
+  font-size: 10px;
+
+  line-height: 1.5;
+}
+
+
+/* LOCATION CARD */
+
+.lokasi-card {
+  width: 345px;
+
+  min-height: 64px;
+
+  margin-top: 9px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 10px 14px;
+
+  background: #ffffff;
+
+  border: 1px solid #C8DDF2;
+
+  transition: transform 0.25s ease;
+}
+
+.lokasi-card:hover {
+  transform: translateY(-3px);
+}
+
+.lokasi-icon {
+  width: 28px;
+  height: 28px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  color: #00659D;
+
+  font-size: 25px;
+
+  flex-shrink: 0;
+}
+
+.lokasi-info {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 2px;
+}
+
+.lokasi-info strong {
+  color: #0A1F5B;
+
+  font-size: 10px;
+}
+
+.lokasi-info span {
+  color: #163B76;
+
+  font-size: 9px;
+}
+
+.lokasi-arrow {
+  margin-left: auto;
+
+  color: #0A1F5B;
+
+  font-size: 21px;
+}
+
+
+/* MAP */
+
+.lokasi-map {
+  width: 100%;
+
+  height: 190px;
+
+  overflow: hidden;
+}
+
+.lokasi-map img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  transition: transform 0.5s ease;
+}
+
+.lokasi-map:hover img {
+  transform: scale(1.03);
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.kontak-cta {
+  position: relative;
+
+  width: 100%;
+
+  min-height: 130px;
+
+  overflow: hidden;
+
+  background: #A8C7E1;
+}
+
+.kontak-cta-background {
+  position: absolute;
+
+  inset: 0;
+
+  background-image:
+    linear-gradient(
+      rgba(145, 185, 218, 0.20),
+      rgba(145, 185, 218, 0.20)
+    ),
+    url('/images/kontak-bottom.jpg');
+
+  background-size: cover;
+
+  background-position: center;
+
+  opacity: 0.95;
+}
+
+.kontak-cta-container {
+  position: relative;
+
+  z-index: 2;
+
+  width: 100%;
+  max-width: 1310px;
+
+  min-height: 130px;
+
+  margin: 0 auto;
+
+  padding: 20px;
+
+  display: grid;
+
+  grid-template-columns: 1.25fr 1fr;
+
+  gap: 28px;
+
+  align-items: center;
+}
+
+
+/* CTA TITLE */
+
+.kontak-cta-title {
+  color: #0A1F5B;
+
+  font-size: clamp(29px, 3vw, 40px);
+
+  line-height: 0.98;
+
+  letter-spacing: -1px;
+
+  font-weight: 900;
+
+  text-align: center;
+}
+
+.kontak-cta-title span {
+  color: #00659D;
+}
+
+
+/* CTA RIGHT */
+
+.kontak-cta-right {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  justify-content: center;
+}
+
+.kontak-cta-right p {
+  max-width: 350px;
+
+  margin: 0 0 10px;
+
+  color: #0A1F5B;
+
+  font-size: 10px;
+
+  line-height: 1.5;
+}
+
+.kontak-cta-button {
+  min-width: 218px;
+
+  height: 38px;
+
+  padding: 0 20px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 15px;
+
+  border-radius: 20px;
+
+  background: #00659D;
+
+  color: #ffffff;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.kontak-cta-button:hover {
+  background: #0A1F5B;
+
+  transform: translateY(-2px);
+}
+
+.kontak-cta-button span {
+  font-size: 16px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+  .kontak-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .kontak-hero-left {
+    padding: 30px 40px;
+  }
+
+  .kontak-hero-image {
+    height: 320px;
+  }
+
+  .kontak-main-container,
+  .lokasi-container,
+  .kontak-cta-container {
+    grid-template-columns: 1fr;
+  }
+
+  .kirim-pesan-card {
+    margin-top: 20px;
+  }
+
+  .lokasi-map {
+    height: 280px;
+  }
+
+  .kontak-cta-container {
+    padding: 35px;
+  }
+
+  .kontak-cta-right {
+    align-items: center;
+  }
+
+  .kontak-cta-right p {
+    text-align: center;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .kontak-hero-left {
+    padding: 25px 20px;
+  }
+
+  .kontak-hero-text h1 {
+    font-size: 50px;
+  }
+
+  .kontak-hero-text h2 {
+    font-size: 34px;
+  }
+
+  .kontak-hero-image {
+    height: 280px;
+  }
+
+  .kontak-main {
+    padding-top: 35px;
+  }
+
+  .kontak-main-container,
+  .lokasi-container {
+    padding: 0 20px;
+  }
+
+  .kontak-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .kontak-info-card {
+    min-height: 105px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .form-group.full {
+    margin-top: 8px;
+  }
+
+  .lokasi-card {
+    width: 100%;
+  }
+
+  .lokasi-map {
+    height: 240px;
+  }
+
+  .kontak-cta-container {
+    padding: 35px 20px;
+  }
+
+  .kontak-cta-title {
+    font-size: 30px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 430px) {
+
+  .kontak-hero-text h1 {
+    font-size: 43px;
+  }
+
+  .kontak-hero-text h2 {
+    font-size: 29px;
+  }
+
+  .kontak-section-heading h2,
+  .kirim-pesan-heading h2 {
+    font-size: 30px;
+  }
+
+  .lokasi-heading h2 {
+    font-size: 30px;
+  }
+
+  .kontak-cta-title {
+    font-size: 26px;
+  }
+}
